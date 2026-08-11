@@ -16,8 +16,8 @@
 | [KatelyaTV](https://github.com/katelya77/KatelyaTV)             | ❌                 | 是         | -          | 待测试   |
 | [Helios](https://github.com/MoonTechLab/Selene)                 | ✅                 | -          | -          | 待测试   |
 | [LunaTV增强版](https://github.com/SzeMeng76/LunaTV)             | ✅                 | -          | -          | 待测试   |
-| [DanmuTV](https://github.com/hsq1820/DanmuTV)                   | ❌不支持自定义配置 |
-| [MoonTV-APP](https://github.com/moli-xia/MoonTV-app)            | ❌不支持自定义配置 |
+| [DanmuTV](https://github.com/hsq1820/DanmuTV)                   | ❌不支持自定义配置 |||❌已测试|
+| [MoonTV-APP](https://github.com/moli-xia/MoonTV-app)            | ❌不支持自定义配置 |||❌已测试|
 
 ---
 
