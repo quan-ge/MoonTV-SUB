@@ -4,25 +4,25 @@
 
 ---
 
-[> > 前往GitHub查看](https://github.com/quan-ge/quan-ge/tree/main/moontv)
+[> > 前往GitHub查看](https://github.com/quan-ge/MoonTV-SUB)
 
-[> > 前往网页查看](https://quan-ge.github.io/quan-ge/moontv/)
+[> > 前往网页查看](https://moontvsub.120322.xyz/)
 
 ## 订阅链接
 
 通用订阅（推荐使用）:
 ```
-https://quan-ge.github.io/quan-ge/moontv/moontv_sub.txt
+https://moontvsub.120322.xyz/moontv_sub.txt
 ```
 
 R18版：
 ```
-https://quan-ge.github.io/quan-ge/moontv/moontv_sub_r18.txt
+https://moontvsub.120322.xyz/moontv_sub_r18.txt
 ```
 
 完整版：
 ```
-https://quan-ge.github.io/quan-ge/moontv/moontv_sub_all.txt
+https://moontvsub.120322.xyz/moontv_sub_all.txt
 ```
 
 
