@@ -12,17 +12,17 @@
 
 通用订阅（推荐使用）:
 ```
-https://moontvsub.120322.xyz/moontv_sub.txt
+https://moontvsub.120322.xyz/moontv/sub.txt
 ```
 
 R18版：
 ```
-https://moontvsub.120322.xyz/moontv_sub_r18.txt
+https://moontvsub.120322.xyz/moontv/sub_r18.txt
 ```
 
 完整版：
 ```
-https://moontvsub.120322.xyz/moontv_sub_all.txt
+https://moontvsub.120322.xyz/moontv/sub_all.txt
 ```
 
 
