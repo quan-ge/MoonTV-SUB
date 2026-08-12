@@ -34,7 +34,7 @@ https://moontvsub.120322.xyz/moontv/sub_all.txt
 
 ---
 
-订阅源支持EchoTV 、MoonTV 、 LunaTV 等
+订阅源支持EchoTV 、DecoTV 、 LunaTV 或衍生项目
 
 [> > > 查看各版本支持情况](./doc/b.md)
 
