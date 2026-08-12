@@ -10,10 +10,16 @@
 
 ## 订阅链接
 
-通用订阅（推荐使用）:
+通用版（推荐）:
 ```
 https://moontvsub.120322.xyz/moontv/sub.txt
 ```
+
+性能版：
+```
+https://moontvsub.120322.xyz/moontv/sub_lite.txt
+```
+
 
 R18版：
 ```
