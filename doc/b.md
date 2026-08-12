@@ -10,13 +10,13 @@
 | [EchoTV](https://github.com/hoowhoami/EchoTV)                   | ✅                 |            |            | ✅兼容    |
 | [MoonTVPlus](https://github.com/mtvpls/MoonTVPlus)              | ✅                 |            |            | ✅可用    |
 | [MoonTV](https://github.com/samqin123/MoonTV)                   | ❌                 | 是         |            | ✅兼容    |
+| [LunaTV增强版](https://github.com/SzeMeng76/LunaTV)             | ✅                 |            |            | 待测试   |
 | [MoonTV(Branch)](https://github.com/Stardm0/MoonTV)             | ✅                 |            |            | ✅可用    |
 | [DecoTV](https://github.com/Decohererk/DecoTV)                  | ✅                 |            |            | ✅可用    |
 | [JoyFlix](https://github.com/jeffernn/joyflix)                  | ❌                 | 是         |            | ✅兼容    |
 | [EdgeOne-MoonTV](https://github.com/zhumengkang/edgeone-moontv) | ❌                 | 是         | 是         | ✅兼容    |
 | [KatelyaTV](https://github.com/katelya77/KatelyaTV)             | ❌                 | 是         |            | 待测试   |
 | [Helios](https://github.com/MoonTechLab/Selene)                 | ✅                 |            |            | 待测试   |
-| [LunaTV增强版](https://github.com/SzeMeng76/LunaTV)             | ✅                 |            |            | 待测试   |
 | [DanmuTV](https://github.com/hsq1820/DanmuTV)                   | ❌不支持           |            |            | 已测试   |
 | [MoonTV-APP](https://github.com/moli-xia/MoonTV-app)            | ❌不支持自定义配置 |            |            | 已测试   |
 
