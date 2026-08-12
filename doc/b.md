@@ -13,6 +13,7 @@
 | [EdgeOne-MoonTV](https://github.com/zhumengkang/edgeone-moontv) | ❌                 | 是         | 是         | ✅兼容    |
 | [DecoTV](https://github.com/Decohererk/DecoTV)                  | ✅                 |            |            | ✅可用    |
 | [JoyFlix](https://github.com/jeffernn/joyflix)                  | ❌                 | 是         |            | ✅兼容    |
+| [MoonTV(Branch)](https://github.com/Stardm0/MoonTV)             | ✅                 |            |            | ✅可用   |
 | [KatelyaTV](https://github.com/katelya77/KatelyaTV)             | ❌                 | 是         |            | 待测试   |
 | [Helios](https://github.com/MoonTechLab/Selene)                 | ✅                 |            |            | 待测试   |
 | [LunaTV增强版](https://github.com/SzeMeng76/LunaTV)             | ✅                 |            |            | 待测试   |
