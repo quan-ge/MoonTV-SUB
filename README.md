@@ -20,7 +20,6 @@ https://moontvsub.120322.xyz/moontv/sub.txt
 https://moontvsub.120322.xyz/moontv/sub_lite.txt
 ```
 
-
 R18版：
 ```
 https://moontvsub.120322.xyz/moontv/sub_r18.txt
@@ -36,7 +35,11 @@ https://moontvsub.120322.xyz/moontv/sub_all.txt
 
 ---
 
-[> > > 查看订阅详情文档](./doc/a.md)
+[> >  查看订阅详情文档](./doc/a.md)
+
+[> > > > 各版本差别](./doc/a.md#三个版本的区别)
+
+[> > > > 建议阅读](./doc/a.md#备注)
 
 ---
 
