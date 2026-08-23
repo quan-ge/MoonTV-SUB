@@ -18,11 +18,11 @@
 
 ## 备注
 
- - 几乎所有版本都不会同步订阅中被删除的源，请在`管理员设置`中手动删除
+ - 如果订阅源有更新，几乎所有版本的软件 都不会同步订阅中被删除的源，
+   请在`管理员设置`中手动删除
+ - APP不支持订阅时可参照下方方法手动导入配置
 
-## 旧版使用说明
-
-APP不支持订阅时可手动导入配置
+## 旧版使用方法
 
  - 访问订阅的URL，将订阅复制下来，例如：`https://quan-ge.github.io/quan-ge/moontv/moontv_sub.txt`
  - 前往[https://www.udtool.com/toolbox/base58-encoder-decoder.html](https://www.udtool.com/toolbox/base58-encoder-decoder.html)
