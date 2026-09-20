@@ -10,6 +10,8 @@
 
 ## 订阅链接
 
+[> > > > 查看各版本差别](./doc/a.md#三个版本的区别)
+
 通用版（推荐）:
 ```
 https://moontvsub.120322.xyz/moontv/sub.txt
@@ -30,14 +32,9 @@ https://moontvsub.120322.xyz/moontv/sub_r18.txt
 https://moontvsub.120322.xyz/moontv/sub_all.txt
 ```
 
-
-**使用完整版时，可能会因为源过多，导致速度变慢，部分部署方式会导致应用部署失败**
-
 ---
 
 [> >  查看订阅详情文档](./doc/a.md)
-
-[> > > > 各版本差别](./doc/a.md#三个版本的区别)
 
 [> > > > 建议阅读](./doc/a.md#备注)
 
