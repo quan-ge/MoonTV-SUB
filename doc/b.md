@@ -8,10 +8,10 @@
 | --------------------------------------------------------------- | -------- | -------------- | ---------- | ---------- |
 | [LunaTV](https://github.com/MoonTechLab/LunaTV)                 | ✅        | ✅              | -          | -          |
 | [EchoTV](https://github.com/hoowhoami/EchoTV)                   | ✅        | ✅              | -          | -          |
-| [MoonTVPlus](https://github.com/mtvpls/MoonTVPlus)              | ✅        | ✅              | -          | -          |
+| [MoonTV(Branch)](https://github.com/Stardm0/MoonTV)             | ✅        | ✅              | -          | -          |
 | [MoonTV](https://github.com/samqin123/MoonTV)                   | ✅        | ❌              | 是         | -          |
 | [LunaTV增强版](https://github.com/SzeMeng76/LunaTV)             | ✅        | ✅              | -          | -          |
-| [MoonTV(Branch)](https://github.com/Stardm0/MoonTV)             | ✅        | ✅              | -          | -          |
+| [MoonTVPlus](https://github.com/mtvpls/MoonTVPlus)              | ✅        | ✅              | -          | -          |
 | [DecoTV](https://github.com/Decohererk/DecoTV)                  | ✅        | ✅              | -          | -          |
 | [JoyFlix](https://github.com/jeffernn/joyflix)                  | ✅        | ❌              | 是         | -          |
 | [Helios](https://github.com/MoonTechLab/Helios)                 | ✅        | ✅              | -          | -          |
