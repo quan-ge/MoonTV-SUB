@@ -25,7 +25,7 @@
 
 ## 旧版使用方法
 
- - 访问订阅的URL，将订阅复制下来，例如：`https://quan-ge.github.io/quan-ge/moontv/moontv_sub.txt`
+ - 访问订阅的URL，将订阅复制下来，例如：`https://quan-ge.github.io/quan-ge/sub/moontv_sub.txt`
  - 前往[Base58转换工具](https://www.udtool.com/toolbox/base58-encoder-decoder.html)
  - 输入后点击`点击解码`，进行Base58解码，将订阅转为配置文件
  - 部分项目需要对配置文件稍作修改

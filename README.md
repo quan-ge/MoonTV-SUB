@@ -14,22 +14,22 @@
 
 通用版（推荐）:
 ```
-https://moontvsub.120322.xyz/moontv/sub.txt
+https://moontvsub.120322.xyz/sub/sub.txt
 ```
 
 性能版：
 ```
-https://moontvsub.120322.xyz/moontv/sub_lite.txt
+https://moontvsub.120322.xyz/sub/sub_lite.txt
 ```
 
 R18版：
 ```
-https://moontvsub.120322.xyz/moontv/sub_r18.txt
+https://moontvsub.120322.xyz/sub/sub_r18.txt
 ```
 
 完整版：
 ```
-https://moontvsub.120322.xyz/moontv/sub_all.txt
+https://moontvsub.120322.xyz/sub/sub_all.txt
 ```
 
 ---
