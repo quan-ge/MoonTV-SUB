@@ -6,7 +6,7 @@
 
 | 软件名                                                          | 评分  | 备注                                 |
 | --------------------------------------------------------------- | ----- | ------------------------------------ |
-| [EchoTV](https://github.com/hoowhoami/EchoTV)                   | ★★★★★ |                                      |
+| [EchoTV](https://github.com/hoowhoami/EchoTV)                   | ★★★★★ |                         |
 | [MoonTVPlus](https://github.com/mtvpls/MoonTVPlus)              | ★★☆☆☆ | 如果忽略无意义的臃肿内容可以改成三星 |
 | [LunaTV增强版](https://github.com/SzeMeng76/LunaTV)             | ★☆☆☆☆ | 卡，不支持代理，BUG多                |
 | [MoonTV(Branch)](https://github.com/Stardm0/MoonTV)             | ★★★★★ |                                      |
