@@ -1,6 +1,6 @@
 # 影视资源订阅
 
-#### 持续更新中，上次更新日期更新：26.10.28
+#### 上次更新时间：<sub><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/quan-ge/MoonTV-SUB?style=flat"></sub>
 
 ---
 
