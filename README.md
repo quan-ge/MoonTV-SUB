@@ -2,6 +2,10 @@
 
 #### 上次更新时间：<sub><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/quan-ge/MoonTV-SUB?style=flat"></sub>
 
+![GitHub Repo stars](https://img.shields.io/github/stars/quan-ge/MoonTV-SUB)
+![GitHub forks](https://img.shields.io/github/forks/quan-ge/MoonTV-SUB)
+![MoonTV SUB](https://img.shields.io/badge/MoonTV-SUB-blue)
+![Github Repo](https://img.shields.io/badge/github-repo-blue?logo=github)
 ---
 
 [> > 前往GitHub查看](https://github.com/quan-ge/MoonTV-SUB)
