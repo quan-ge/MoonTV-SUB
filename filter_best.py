@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 该脚本用于自动生成sub_best
 # 作者：DeepSeek
-# 版本：1.0.3
+# 版本：1.2.0
 
 # ================= 配置区 =================
 SOURCE_FILE = "./sub/sub_all"
