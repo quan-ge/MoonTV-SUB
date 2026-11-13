@@ -41,7 +41,7 @@ https://moontvsub.120322.xyz/sub/sub_best
 
 ---
 
-## <span style="color:green;">▶</span> 订阅版本一览
+## <span style="color:green;">▶▶</span> 订阅版本一览
 
 | 版本   | ID       | R18源 | 影视源 | 源数量 |  上次更新  |
 | :------: | :--------: | :-----: | :------: | :-----: | :--------: |
@@ -53,7 +53,7 @@ https://moontvsub.120322.xyz/sub/sub_best
 
 ✅：包含 / ❌：不包含
 
-## <span style="color:green;">▶</span> 订阅详情
+## <span style="color:green;">▶▶</span> 订阅详情
 
 **精简版 (sub_lite)**：精选 15 个 R18 + 15 个普通源（共 30 个）。
 
