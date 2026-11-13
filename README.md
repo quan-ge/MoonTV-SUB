@@ -17,6 +17,14 @@
 
 ---
 
+<script>
+document.write(`
+<div style="background-color: #fff3cd; border: 1px solid #ffecb5; color: #664d03; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
+  <strong>🚀 提示：</strong>您正在查看 GitHub 源码。为了获得最佳体验，请前往 <a href="https://moontvsub.120322.xyz/" style="color: #0d6efd; font-weight: bold;">网页版查看</a>。
+</div>
+`);
+</script>
+
 <h3 style="font-size: 1.5rem; color: #e9555c; margin-bottom: 0.5rem;">内容太多，不想看？一键复制URL使用！</h3>
 <div style="margin-bottom: 1rem;">
   <button onclick="copySubUrl()" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
