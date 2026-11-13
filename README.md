@@ -19,15 +19,8 @@
 
 <script>
 document.write(`
-
----
-
-# 🚀 **提示**：您正在查看 GitHub 源码。
-
-# 为了获得最佳体验，请前往 [网页版查看](https://moontvsub.120322.xyz/)。
-
----
-
+<h2>🚀 提示： 您当前正在 Github.COM 查看源码。</h2>
+<h2>👉 为了获得最佳体验，请前往 <a href="https://moontvsub.120322.xyz/"><mark>网页查看</mark></a> 👈</h2>
 `);
 </script>
 
