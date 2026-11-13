@@ -7,12 +7,10 @@
 ![MoonTV SUB](https://img.shields.io/badge/MoonTV-SUB-blue)
 ![Github Repo](https://img.shields.io/badge/github-repo-blue?logo=github)
 
-<script>
-document.write(`
+
 <h1>🚀 提示： 您当前正在 Github.COM 查看源码。</h1>
 <h1>👉 为了获得最佳体验，请前往 <a href="https://moontvsub.120322.xyz/"><mark>网页查看</mark></a> 👈</h1>
-`);
-</script>
+
 
 ---
 
