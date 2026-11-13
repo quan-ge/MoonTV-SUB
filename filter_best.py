@@ -4,14 +4,14 @@ import requests
 import base58
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# 该脚本用于自动生成sub_best
+# 该脚本用于自动生成多版本订阅
 # 作者：DeepSeek
-# 版本：1.2.0
+# 版本：1.2.2
 
 # ================= 配置区 =================
 SOURCE_FILE = "./sub/sub_all"
 TOP_N = 50        # 保留前 50 个最快的源
-TIMEOUT = 6       # 超时时间 6 秒
+TIMEOUT = 4       # 超时时间 （xx 秒）
 
 # 强制不走代理
 PROXIES = {"http": None, "https": None}
@@ -31,9 +31,14 @@ def fetch_sources():
         api_site_dict = data.get("api_site", {})
         sources_list = []
         for domain, info in api_site_dict.items():
+            api_url = info.get("api")
+            if not api_url:
+                print(f"⚠️ 跳过无 API 的源: {domain}")
+                continue
+                
             sources_list.append({
                 "domain": domain,
-                "api": info.get("api"),
+                "api": api_url,
                 "name": info.get("name", "未知"),
                 "detail": info.get("detail", ""),
                 "is_adult": info.get("is_adult", False)
@@ -57,14 +62,28 @@ def check_source(source_item):
         resp = requests.get(real_url, headers=headers, proxies=PROXIES, timeout=TIMEOUT)
         elapsed = time.time() - start_time
         
-        if resp.status_code == 200 and len(resp.text) > 50:
-            return {"source": source_item, "status": "ok", "time": elapsed}
+        if resp.status_code == 200:
+            # 严格要求返回 JSON，不是 JSON 直接淘汰
+            try:
+                resp.json()
+            except Exception:
+                print(f"  ⚠️ {source_item['name']} 返回非 JSON 内容")
+                return {"source": source_item, "status": "bad_data", "time": 999}
+                
+            if len(resp.text) > 50:
+                return {"source": source_item, "status": "ok", "time": elapsed}
+            else:
+                print(f"  ⚠️ {source_item['name']} 返回内容过短")
+                return {"source": source_item, "status": "bad_data", "time": 999}
         else:
+            print(f"  ⚠️ {source_item['name']} HTTP 状态码: {resp.status_code}")
             return {"source": source_item, "status": "bad_data", "time": 999}
             
-    except Exception:
+    except Exception as e:
+        print(f"  ⚠️ {source_item['name']} 失败: {type(e).__name__}: {e}")
         return {"source": source_item, "status": "blocked", "time": 999}
 
+    
 def main():
     all_sources, cache_time = fetch_sources()
     if not all_sources:
@@ -75,7 +94,6 @@ def main():
     results = []
     with ThreadPoolExecutor(max_workers=15) as executor:
         future_to_source = {executor.submit(check_source, src): src for src in all_sources}
-
         
         for future in as_completed(future_to_source):
             res = future.result()
@@ -85,24 +103,24 @@ def main():
             else:
                 print(f"❌ 被墙/失效: {res['source']['name']}")
 
-    # 按时间排序取前 TOP_N
     results.sort(key=lambda x: x["time"])
-    best_results = results[:TOP_N]
-    
-    print(f"\n🎉 测速完毕！存活 {len(results)} 个，保留最快的 {len(best_results)} 个。")
 
-    # ========= 生成配置文件 =========== 
-
+    # 按 R18 和普通源分别提取分类
     r18_list = []
     normal_list = []
-    for item in results:  # results 已经按速度排好序了
+    for item in results:
         if item["source"].get("is_adult"):
             r18_list.append(item)
         else:
             normal_list.append(item)
 
+    # ========== 生成 sub_best (各取 TOP_N/2 混合) ==========
+    half_n = TOP_N // 2
+    r18_best = r18_list[:half_n]
+    normal_best = normal_list[:half_n]
+    # 混合后重新排序
+    best_results = sorted(r18_best + normal_best, key=lambda x: x["time"])
 
-    # ========== 生成 sub_best ==========
     best_api_site = {}
     for item in best_results:
         src = item["source"]
@@ -123,14 +141,10 @@ def main():
         f.write(final_b58_bytes.decode('utf-8'))
     print("💾 已保存到 ./sub/sub_best")
 
-
-    # ========== 生成 sub_lite ==========
+    # ========== 生成 sub_lite (各 15 个) ==========
     print("\n正在生成 sub_lite (15个R18 + 15个普通)...")
-        
-    # 各取前 15 个
     lite_results = r18_list[:15] + normal_list[:15]
     
-    # 重新组装
     lite_api_site = {}
     for item in lite_results:
         src = item["source"]
@@ -153,8 +167,7 @@ def main():
     print(f"📊 sub_lite 统计: R18源 {len(r18_list[:15])} 个, 普通源 {len(normal_list[:15])} 个")
     print("💾 已保存到 ./sub/sub_lite")
 
-
-        # ========== 生成 sub  ==========
+    # ========== 生成 sub (纯普通源) ==========
     print("\n正在生成 sub (纯普通源)...")
     sub_api_site = {}
     for item in normal_list:
@@ -165,7 +178,6 @@ def main():
         }
         if src["detail"]:
             sub_api_site[src["domain"]]["detail"] = src["detail"]
-        # 纯普通源不需要 is_adult 字段
 
     sub_data = {"cache_time": cache_time, "api_site": sub_api_site}
     sub_json_str = json.dumps(sub_data, ensure_ascii=False)
@@ -175,8 +187,7 @@ def main():
         f.write(sub_b58_bytes.decode('utf-8'))
     print(f"💾 已保存到 ./sub/sub (共 {len(normal_list)} 个普通源)")
 
-
-    # ========== 生成 sub_r18 ==========
+    # ========== 生成 sub_r18 (纯 R18 源) ==========
     print("\n正在生成 sub_r18 (纯 R18 源)...")
     r18_api_site = {}
     for item in r18_list:
