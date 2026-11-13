@@ -1,7 +1,11 @@
 # 影视资源订阅
 
-#### 持续更新中，上次更新日期更新：26.9.30
+#### 上次更新时间：<sub><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/quan-ge/MoonTV-SUB?style=flat"></sub>
 
+![GitHub Repo stars](https://img.shields.io/github/stars/quan-ge/MoonTV-SUB)
+![GitHub forks](https://img.shields.io/github/forks/quan-ge/MoonTV-SUB)
+![MoonTV SUB](https://img.shields.io/badge/MoonTV-SUB-blue)
+![Github Repo](https://img.shields.io/badge/github-repo-blue?logo=github)
 ---
 
 [> > 前往GitHub查看](https://github.com/quan-ge/MoonTV-SUB)
@@ -12,9 +16,9 @@
 
 | 版本 | ID       | R18源 | 影视源 | 源数量 | 上次更新 |
 | ---- | -------- | ----- | ------ | ------ | -------- |
-| 默认 | sub      | ❌     | ✅      | 42     | 26.9.20  |
-| R18版  | sub_r18  | ✅     | ❌      | 18     | 26.9.30  |
-| 精简版 | sub_lite  | 部分     | 部分      | 39     | 26.10.1  |
+| 默认 | sub      | ❌     | ✅      | 42     | 26.10.28  |
+| R18版  | sub_r18  | ✅     | ❌      | 18     | 26.10.28  |
+| 精简版 | sub_lite  | 部分     | 部分      | 39     | 26.10.28  |
 | 完整版 | sub_all  | ✅     | ✅      | 60     | 26.10.28  |
 
 ✅：包含 / ❌：不包含
