@@ -19,8 +19,15 @@
 
 <script>
 document.write(`
+
+---
+
 # 🚀 **提示**：您正在查看 GitHub 源码。
+
 # 为了获得最佳体验，请前往 [网页版查看](https://moontvsub.120322.xyz/)。
+
+---
+
 `);
 </script>
 
