@@ -19,9 +19,8 @@
 
 <script>
 document.write(`
-<div style="background-color: #fff3cd; border: 1px solid #ffecb5; color: #664d03; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
-  <strong>🚀 提示：</strong>您正在查看 GitHub 源码。为了获得最佳体验，请前往 <a href="https://moontvsub.120322.xyz/" style="color: #0d6efd; font-weight: bold;">网页版查看</a>。
-</div>
+# 🚀 **提示**：您正在查看 GitHub 源码。
+# 为了获得最佳体验，请前往 [网页版查看](https://moontvsub.120322.xyz/)。
 `);
 </script>
 
