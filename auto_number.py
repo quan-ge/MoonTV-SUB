@@ -6,6 +6,8 @@ import datetime
 # 作者：DeepSeek
 # 版本：1.1.0
 
+# 自动更新源列表，自动将时间更新为当前时间
+
 # ================= 配置区 =================
 README_FILE = "./README.md"
 # 需要更新的版本列表
@@ -39,7 +41,6 @@ def update_readme():
         print("❌ 没有成功读取任何源，退出。")
         return
 
-    # 获取今天的日期，格式为 26.11.13
     today_str = datetime.datetime.now().strftime("%y.%m.%d")
     
     with open(README_FILE, "r", encoding="utf-8") as f:
@@ -49,21 +50,31 @@ def update_readme():
     for line in lines:
         if line.strip().startswith("|"):
             parts = line.split("|")
-            # 假设格式: | 版本 | ID | R18源 | 影视源 | 源数量 | 上次更新 |
-            # parts 列表索引: [0]空, [1]版本, [2]ID, [3]R18, [4]影视, [5]数量, [6]更新时间, [7]空
             if len(parts) >= 7:
                 row_id = parts[2].strip()
                 if row_id in counts:
-                    # 更新数量列
+                    # 1. 总是更新数量
                     parts[5] = f" {counts[row_id]} "
-                    # 更新日期列
-                    parts[6] = f" {today_str} "
+                    
+                    # 2. 询问是否更新日期
+                    old_date = parts[6].strip()
+                    if old_date != today_str: 
+                        answer = input(f"❓ 发现 {row_id} 存在。是否将它的更新日期从 [{old_date}] 改为今天 [{today_str}]？(y/n): ")
+                        if answer.lower() in ['y', '', 'yes', 'Y']:
+                            parts[6] = f" {today_str} "
+                            print(f"   -> 已更新 {row_id} 的日期。")
+                        else:
+                            print(f"   -> 保持 {row_id} 原日期不变。")
+                    else:
+                        print(f"✨ {row_id} 的日期已经是今天了，跳过询问。")
+                        
                     line = "|".join(parts)
         new_lines.append(line)
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
-    print(f"💾 README 更新完毕，日期已更新为 {today_str}")
+    print("💾 README 已保存。")
+
 
 if __name__ == "__main__":
     update_readme()

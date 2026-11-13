@@ -1,23 +1,15 @@
-[< < 返回](../)
+[< < 返回](./a.md)
 
-## 订阅链接
+## 旧版软件使用方法
 
-通用版:
-```
-https://moontvsub.120322.xyz/sub/sub
-```
+（仅供参考）
 
-精简版：
-```
-https://moontvsub.120322.xyz/sub/sub_lite
-```
+ - 访问订阅的URL，例如：`https://quan-ge.github.io/quan-ge/sub/moontv_sub.txt`
 
-R18版：
-```
-https://moontvsub.120322.xyz/sub/sub_r18
-```
+ - 将获取到的Base58编码完整复制下来
 
-完整版：
-```
-https://moontvsub.120322.xyz/sub/sub_all
-```
+ - 前往[任意Base58转换工具](https://www.udtool.com/toolbox/base58-encoder-decoder.html)，将刚才得到的乱码转为配置文件
+
+ - 部分 项目/APP 可能需要对配置文件稍作修改，才能正常使用
+
+ - 通过你使用的项目其文档中的办法手动导入配置文件（一般是替换软件目录下的JSON文件中的内容）
