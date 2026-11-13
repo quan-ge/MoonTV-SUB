@@ -15,7 +15,31 @@
 
 [> > 前往网页查看](https://moontvsub.120322.xyz/)
 
-## 订阅版本一览
+---
+
+<h3 style="font-size: 1.5rem; color: #e9555c; margin-bottom: 0.5rem;">内容太多，不想看？一键复制URL使用！</h3>
+<div style="margin-bottom: 1rem;">
+  <button onclick="copySubUrl()" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
+</div>
+
+```
+https://moontvsub.120322.xyz/sub/sub_best
+```
+
+<script>
+function copySubUrl() {
+  const url = document.getElementById('sub-url-text').innerText.trim();
+  navigator.clipboard.writeText(url).then(() => {
+    alert('链接已复制！');
+  }).catch(() => {
+    alert('复制失败，请手动复制');
+  });
+}
+</script>
+
+---
+
+## <span style="color:green;">▶</span> 订阅版本一览
 
 | 版本   | ID       | R18源 | 影视源 | 源数量 |  上次更新  |
 | :------: | :--------: | :-----: | :------: | :-----: | :--------: |
@@ -27,7 +51,7 @@
 
 ✅：包含 / ❌：不包含
 
-## 订阅详情
+## <span style="color:green;">▶</span> 订阅详情
 
 **精简版 (sub_lite)**：精选 15 个 R18 + 15 个普通源（共 30 个）。
 
@@ -79,7 +103,7 @@ https://moontvsub.120322.xyz/sub/sub_all
 
 ---
 
-### 文档
+## <span style="color:green;">▶</span> 文档
 
 [> > 前往查看](./doc/a.md)
 
