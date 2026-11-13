@@ -7,6 +7,13 @@
 ![MoonTV SUB](https://img.shields.io/badge/MoonTV-SUB-blue)
 ![Github Repo](https://img.shields.io/badge/github-repo-blue?logo=github)
 
+<script>
+document.write(`
+<h1>🚀 提示： 您当前正在 Github.COM 查看源码。</h1>
+<h1>👉 为了获得最佳体验，请前往 <a href="https://moontvsub.120322.xyz/"><mark>网页查看</mark></a> 👈</h1>
+`);
+</script>
+
 ---
 
 订阅源支持EchoTV 、DecoTV 、 LunaTV 或衍生项目
@@ -16,13 +23,6 @@
 [> > 前往网页查看](https://moontvsub.120322.xyz/)
 
 ---
-
-<script>
-document.write(`
-<h2>🚀 提示： 您当前正在 Github.COM 查看源码。</h2>
-<h2>👉 为了获得最佳体验，请前往 <a href="https://moontvsub.120322.xyz/"><mark>网页查看</mark></a> 👈</h2>
-`);
-</script>
 
 <h3 style="font-size: 1.5rem; color: #e9555c; margin-bottom: 0.5rem;">内容太多，不想看？一键复制URL使用！</h3>
 <div style="margin-bottom: 1rem;">
