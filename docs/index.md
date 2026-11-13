@@ -19,7 +19,7 @@ LunaTV的订阅源，多版本随心选择，一键添加，持续更新中
 
 ---
 
-<h3 style="font-size: 1.5rem; color: #e9555c; margin-bottom: 0.5rem;">内容太多，不想看？一键复制URL使用！</h3>
+<h3 style="font-size: 2rem; color: #e9555c; margin-bottom: 0.5rem;">内容太多，不想看？一键复制URL使用！</h3>
 <div style="margin-bottom: 1rem;">
   <button onclick="copyText('https://moontvsub.120322.xyz/sub/sub_best')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 </div>
