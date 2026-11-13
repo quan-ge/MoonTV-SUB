@@ -1,28 +1,41 @@
 import os
 import shutil
 
-# 黑名单（完全匹配）
-BLACKLIST_ITEMS = {"web", ".git", "CNAME", "README.md"}
-# 黑名单后缀（忽略大小写）
-BLACKLIST_EXTS = {".py"}
+# 复制黑名单（完全匹配）
+COPY_BLACKLIST = {"web", ".git", "CNAME", "README.md"}
+# 复制黑名单后缀（忽略大小写）
+COPY_BLACKLIST_EXTS = {".py"}
+
+# 清理白名单需要保留的文件/文件夹
+CLEAN_KEEP = {".git", "README.md"}
 
 def copy_to_web():
     source_dir = "."
     target_dir = "./web"
     
-    # 1. 彻底删除 web 目录（忽略系统占用等报错）
+    # 1. 清理 web 目录（保留 .git 和 README.md）
     if os.path.exists(target_dir):
-        shutil.rmtree(target_dir, ignore_errors=True)
-        print(f"🗑️ 已彻底删除 {target_dir} 目录")
-        
-    # 重新创建 web 目录
-    os.makedirs(target_dir)
-    
-    # 2. 开始复制（忽略黑名单）
+        for item in os.listdir(target_dir):
+            if item in CLEAN_KEEP:
+                continue  # 保留白名单里的内容
+                
+            item_path = os.path.join(target_dir, item)
+            if os.path.isdir(item_path):
+                shutil.rmtree(item_path, ignore_errors=True)
+            else:
+                try:
+                    os.remove(item_path)
+                except Exception:
+                    pass
+        print(f"🗑️ 已清理 {target_dir} 目录（保留了 .git 和 README.md）")
+    else:
+        os.makedirs(target_dir)
+
+    # 2. 开始复制
     for item in os.listdir(source_dir):
-        if item in BLACKLIST_ITEMS:
+        if item in COPY_BLACKLIST:
             continue
-        if os.path.splitext(item)[1].lower() in BLACKLIST_EXTS:
+        if os.path.splitext(item)[1].lower() in COPY_BLACKLIST_EXTS:
             continue
             
         src_path = os.path.join(source_dir, item)
