@@ -71,7 +71,7 @@ https://moontvsub.120322.xyz/sub/sub_lite
 
 **✅推荐** 兼顾速度与资源丰富度，日常使用体验最佳。
 
-
+<button onclick="copyText('https://moontvsub.120322.xyz/sub/sub_best')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 ```
 https://moontvsub.120322.xyz/sub/sub_best
 ```
@@ -82,6 +82,7 @@ https://moontvsub.120322.xyz/sub/sub_best
 
 资源站可能夹带少量非目标内容，属源站行为。~~人话：如果还有R18内容跟我没关系~~
 
+<button onclick="copyText('https://moontvsub.120322.xyz/sub/sub')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 ```
 https://moontvsub.120322.xyz/sub/sub
 ```
@@ -92,6 +93,7 @@ https://moontvsub.120322.xyz/sub/sub
 
 懂的都懂。
 
+<button onclick="copyText('https://moontvsub.120322.xyz/sub/sub_r18')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 ```
 https://moontvsub.120322.xyz/sub/sub_r18
 ```
@@ -102,6 +104,7 @@ https://moontvsub.120322.xyz/sub/sub_r18
 
 **❗注意** 过多的源会拖慢加载速度。
 
+<button onclick="copyText('https://moontvsub.120322.xyz/sub/sub_all')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 ```
 https://moontvsub.120322.xyz/sub/sub_all
 ```
