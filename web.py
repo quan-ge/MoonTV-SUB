@@ -2,18 +2,18 @@ import os
 import shutil
 
 # 复制黑名单（完全匹配）
-COPY_BLACKLIST = {"web", ".git", "CNAME", "README.md"}
+COPY_BLACKLIST = {"docs", ".git", "CNAME", "README.md"}
 # 复制黑名单后缀（忽略大小写）
 COPY_BLACKLIST_EXTS = {".py"}
 
 # 清理白名单需要保留的文件/文件夹
 CLEAN_KEEP = {".git", "README.md"}
 
-def copy_to_web():
+def copy_to_docs():
     source_dir = "."
-    target_dir = "./web"
+    target_dir = "./docs"
     
-    # 1. 清理 web 目录（保留 .git 和 README.md）
+    # 1. 清理 docs 目录（保留 .git 和 README.md）
     if os.path.exists(target_dir):
         for item in os.listdir(target_dir):
             if item in CLEAN_KEEP:
@@ -52,6 +52,6 @@ def copy_to_web():
             print(f"❌ 复制 {item} 失败: {e}")
 
 if __name__ == "__main__":
-    print("🚀 开始清理并复制文件到 ./web ...")
-    copy_to_web()
+    print("🚀 开始清理并复制文件到 ./docs ...")
+    copy_to_docs()
     print("🎉 复制完成！")
