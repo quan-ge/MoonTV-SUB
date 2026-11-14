@@ -2,7 +2,7 @@ import os
 import shutil
 
 # 自动生成Pages文档
-# 作者：DeepSeek
+# 作者：DeepSeek、QuanGe
 # 版本：1.2.0
 
 # ---------------------配置区--------------------------

@@ -5,7 +5,7 @@ import base58
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 该脚本用于自动生成多版本订阅
-# 作者：DeepSeek
+# 作者：DeepSeek、QuanGe
 # 版本：1.2.2
 
 # ================= 配置区 =================

@@ -45,11 +45,11 @@ https://moontvsub.120322.xyz/sub/sub_best
 
 | 版本   | ID       | R18源 | 影视源 | 源数量 |  上次更新  |
 | :------: | :--------: | :-----: | :------: | :-----: | :--------: |
-| 默认   | sub      | ❌     | ✅    | 38 | 26.11.13 |
-| R18版  | sub_r18  | ✅     | ❌    | 26 | 26.11.13 |
-| 精简版 | sub_lite | 部分    | 部分   | 30 | 26.11.13 |
-| 精选 | sub_best | 部分    | 部分   | 50 | 26.11.13 |
-| 完整版 | sub_all  | ✅     | ✅    | 101 | 26.11.13 |
+| 默认   | sub      | ❌     | ✅    | 34 | 26.11.14 |
+| R18版  | sub_r18  | ✅     | ❌    | 24 | 26.11.14 |
+| 精简版 | sub_lite | 部分    | 部分   | 30 | 26.11.14 |
+| 精选 | sub_best | 部分    | 部分   | 49 | 26.11.14 |
+| 完整版 | sub_all  | ✅     | ✅    | 102 | 26.11.14 |
 
 ✅：包含 / ❌：不包含
 
@@ -58,6 +58,8 @@ https://moontvsub.120322.xyz/sub/sub_best
 **精简版 (sub_lite)**：精选 15 个 R18 + 15 个普通源（共 30 个）。
 
 **✅推荐** 适合追求极致加载速度、不想被过多重复结果干扰的用户。
+
+（该源由QGBOT自动生成）
 
 <button onclick="copyText('https://moontvsub.120322.xyz/sub/sub_lite')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 
@@ -71,6 +73,8 @@ https://moontvsub.120322.xyz/sub/sub_lite
 
 **✅推荐** 兼顾速度与资源丰富度，日常使用体验最佳。
 
+（该源由QGBOT自动生成）
+
 <button onclick="copyText('https://moontvsub.120322.xyz/sub/sub_best')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 ```
 https://moontvsub.120322.xyz/sub/sub_best
@@ -82,6 +86,8 @@ https://moontvsub.120322.xyz/sub/sub_best
 
 资源站可能夹带少量非目标内容，属源站行为。~~人话：如果还有R18内容跟我没关系~~
 
+（该源由QGBOT自动生成）
+
 <button onclick="copyText('https://moontvsub.120322.xyz/sub/sub')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 ```
 https://moontvsub.120322.xyz/sub/sub
@@ -92,6 +98,8 @@ https://moontvsub.120322.xyz/sub/sub
 **R18版 (sub_r18)** ：纯 R18 源，已剔除所有普通影视源。
 
 懂的都懂。
+
+（该源由QGBOT自动生成）
 
 <button onclick="copyText('https://moontvsub.120322.xyz/sub/sub_r18')" style="padding: 6px 14px; font-size: 0.95rem; cursor: pointer; background: #2ea44f; color: #fff; border: none; border-radius: 4px;">📋 点击复制订阅URL</button>
 ```

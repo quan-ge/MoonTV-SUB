@@ -3,7 +3,7 @@ import base58
 import datetime
 
 # 该脚本用于自动更新README
-# 作者：DeepSeek
+# 作者：DeepSeek、QuanGe
 # 版本：1.2.0
 
 # 自动更新源列表，自动将时间更新为当前时间
