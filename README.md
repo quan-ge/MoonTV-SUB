@@ -15,7 +15,7 @@
 
 ## 🕮 文档站
 
-[<mark>**点击跳转文**</mark>](https://moontvsub.120322.xyz/)
+[<mark>**点击跳转**</mark>](https://moontvsub.120322.xyz/)
 
 ---
 
