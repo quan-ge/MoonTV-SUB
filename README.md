@@ -1,4 +1,9 @@
-# 影视资源订阅
+<div align="center">
+  <img src="logo.svg" alt="MoonTV-SUB Logo" width="180" height="180">
+  <h1>MoonTV-SUB</h1>
+  <p>影视资源订阅 · 一键接入</p>
+</div>
+
 
 #### 上次更新时间：<sub><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/quan-ge/MoonTV-SUB?style=flat"></sub>
 
