@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonTV-SUB 影视资源订阅</title>
+    <!-- 引入稍微好看一点的无衬线字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            background: linear-gradient(90deg, #2ea44f, #1b722d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 0.2rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .badges {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .badges img {
+            margin: 0 4px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #1b722d;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 0.5rem;
+        }
+        .copy-container {
+            display: flex;
+            align-items: center;
+            background: #f6f8fa;
+            border: 1px solid #d1d5da;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+        .copy-container code {
+            flex-grow: 1;
+            padding: 0.75rem 1rem;
+            background: transparent;
+            font-family: monospace;
+            color: #0366d6;
+            word-break: break-all;
+        }
+        .copy-btn {
+            padding: 0.75rem 1.2rem;
+            font-size: 0.95rem;
+            cursor: pointer;
+            background: #2ea44f;
+            color: #fff;
+            border: none;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        .copy-btn:hover {
+            background: #27823f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+        th {
+            background-color: #f1f8ff;
+            color: #24292e;
+        }
+        tr:hover {
+            background-color: #f6f8fa;
+        }
+        .warning {
+            color: #e9555c;
+            font-weight: 500;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+            padding-top: 2rem;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MoonTV-SUB</h1>
+    <div class="subtitle">影视资源订阅 · 极客极简 · 一键接入</div>
+
+    <div class="badges">
+        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/quan-ge/MoonTV-SUB?style=flat">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/quan-ge/MoonTV-SUB">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/quan-ge/MoonTV-SUB">
+        <img alt="MoonTV-SUB" src="https://img.shields.io/badge/MoonTV-SUB-blue">
+    </div>
+
+    <div class="card">
+        <p>订阅源支持 <strong>EchoTV</strong>、<strong>DecoTV</strong>、<strong>LunaTV</strong> 或衍生项目。</p>
+        <p>LunaTV 的订阅源，多版本随心选择，一键添加，持续更新中。</p>
+        <p>👉 <a href="https://github.com/quan-ge/MoonTV-SUB" target="_blank">前往 GitHub 查看源码</a></p>
+    </div>
+
+    <div class="card">
+        <h3>📌 一键快速订阅 (精选版)</h3>
+        <p class="warning">内容太多不想看？直接复制下方标准版 URL 使用！</p>
+        <div class="copy-container">
+            <code id="url-best">https://moontvsub.120322.xyz/sub/sub_best</code>
+            <button class="copy-btn" onclick="copyText('url-best', this)">📋 点击复制</button>
+        </div>
+    </div>
+
+    <h2>🎯 订阅版本一览</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>版本</th>
+                <th>ID</th>
+                <th>R18源</th>
+                <th>影视源</th>
+                <th>源数量</th>
+                <th>上次更新</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>默认</td>
+                <td><code>sub</code></td>
+                <td>❌</td>
+                <td>✅</td>
+                <td>34</td>
+                <td>26.11.15</td>
+            </tr>
+            <tr>
+                <td>R18版</td>
+                <td><code>sub_r18</code></td>
+                <td>✅</td>
+                <td>❌</td>
+                <td>22</td>
+                <td>26.11.15</td>
+            </tr>
+            <tr>
+                <td>精简版</td>
+                <td><code>sub_lite</code></td>
+                <td>部分</td>
+                <td>部分</td>
+                <td>30</td>
+                <td>26.11.15</td>
+            </tr>
+            <tr>
+                <td><strong>精选</strong></td>
+                <td><code>sub_best</code></td>
+                <td>部分</td>
+                <td>部分</td>
+                <td>47</td>
+                <td>26.11.15</td>
+            </tr>
+            <tr>
+                <td>完整版</td>
+                <td><code>sub_all</code></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>102</td>
+                <td>26.11.15</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="text-align: center; color: #666; font-size: 0.9rem;">✅：包含 / ❌：不包含</p>
+
+    <h2>📦 详细订阅说明</h2>
+
+    <div class="card">
+        <h3>精简版 (sub_lite)</h3>
+        <p>精选 15 个 R18 + 15 个普通源（共 30 个）。</p>
+        <p><strong>✅ 推荐</strong> 适合追求极致加载速度、不想被过多重复结果干扰的用户。</p>
+        <p style="color: #888; font-size: 0.9rem;">（该源由 QGBOT 自动生成）</p>
+        <div class="copy-container">
+            <code id="url-lite">https://moontvsub.120322.xyz/sub/sub_lite</code>
+            <button class="copy-btn" onclick="copyText('url-lite', this)">📋 复制</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>精选 (sub_best)</h3>
+        <p>从完整版中测速挑选出的最快 50 个源（包含普通和 R18）。</p>
+        <p><strong>✅ 推荐</strong> 兼顾速度与资源丰富度，日常使用体验最佳。</p>
+        <p style="color: #888; font-size: 0.9rem;">（该源由 QGBOT 自动生成）</p>
+        <div class="copy-container">
+            <code id="url-best2">https://moontvsub.120322.xyz/sub/sub_best</code>
+            <button class="copy-btn" onclick="copyText('url-best2', this)">📋 复制</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>默认 (sub)</h3>
+        <p>纯普通影视源，已剔除所有 R18 源。</p>
+        <p>资源站可能夹带少量非目标内容，属源站行为。 <s>人话：如果还有 R18 内容跟我没关系</s></p>
+        <p style="color: #888; font-size: 0.9rem;">（该源由 QGBOT 自动生成）</p>
+        <div class="copy-container">
+            <code id="url-sub">https://moontvsub.120322.xyz/sub/sub</code>
+            <button class="copy-btn" onclick="copyText('url-sub', this)">📋 复制</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>R18版 (sub_r18)</h3>
+        <p>纯 R18 源，已剔除所有普通影视源。</p>
+        <p>懂的都懂。</p>
+        <p style="color: #888; font-size: 0.9rem;">（该源由 QGBOT 自动生成）</p>
+        <div class="copy-container">
+            <code id="url-r18">https://moontvsub.120322.xyz/sub/sub_r18</code>
+            <button class="copy-btn" onclick="copyText('url-r18', this)">📋 复制</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>完整版 (sub_all)</h3>
+        <p>包含所有普通源和 R18 源（共 102 个）。</p>
+        <p class="warning">❗ 注意：过多的源会拖慢加载速度。</p>
+        <div class="copy-container">
+            <code id="url-all">https://moontvsub.120322.xyz/sub/sub_all</code>
+            <button class="copy-btn" onclick="copyText('url-all', this)">📋 复制</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>📖 详细文档</h3>
+        <p>请前往 <a href="./doc/a.md">文档页</a> 查看更详细的说明。</p>
+    </div>
+
+    <div class="footer">
+        <p><strong>免责声明</strong></p>
+        <p>本项目仅供技术交流与学习使用，下载或保存后须在半小时内删除文件。</p>
+        <p>所有资源均来源于互联网公开数据，一切数据与本项目无关。请勿用于商业用途。</p>
+        <p>如因使用本订阅源产生的任何版权纠纷，本项目概不负责。</p>
+    </div>
+
+    <script>
+        // 优化后的复制函数：高内聚低耦合，只需传入元素 ID 和按钮对象
+        function copyText(elementId, btnElement) {
+            const textToCopy = document.getElementById(elementId).innerText;
+            
+            // 兼容非 HTTPS 环境的复制方案
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showSuccess(btnElement);
+                }).catch(() => {
+                    fallbackCopyTextToClipboard(textToCopy, btnElement);
+                });
+            } else {
+                fallbackCopyTextToClipboard(textToCopy, btnElement);
+            }
+        }
+
+        function fallbackCopyTextToClipboard(text, btnElement) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            // 避免滚动到页面底部
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showSuccess(btnElement);
+            } catch (err) {
+                alert('复制失败，请手动选择复制');
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function showSuccess(btn) {
+            const originalText = btn.innerText;
+            btn.innerText = '✅ 已复制';
+            btn.style.background = '#1b722d';
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.background = '#2ea44f';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
