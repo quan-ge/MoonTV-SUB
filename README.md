@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="logo.svg" alt="MoonTV-SUB Logo" width="180" height="180">
+  <img src="logo.svg" alt="MoonTV-SUB Logo" width="100" height="100">
   <h1>MoonTV-SUB</h1>
-  <p>影视资源订阅 · 一键接入</p>
+  <p>影视资源订阅 · 极客极简 · 一键接入</p>
 </div>
 
 
